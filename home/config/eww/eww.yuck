@@ -1,0 +1,41 @@
+; yuck файл eww
+; от Begushchiy
+
+; За более подробной информацией о конфиге для eww перейти на сайт:
+; https://elkowar.github.io/eww/
+
+;===== MAIN ARCH MENU =========================================================;
+
+(defvar volume 0)
+(defvar brightness 0)
+
+(defwindow arch-menu
+	:class "arch-menu"
+	:monitor 0
+	:vexpand false
+	:geometry (geometry :x "0px"
+						:y "0px"
+						:width "400px"
+						:height "335px")
+	:stacking "fg"
+	(arch-menu-wg))
+
+(defwidget arch-menu-wg []
+	(box :class "main" :orientation "v" :space-evenly false
+		(box :class "top-panel" :orientation "h" :space-evenly false
+			(label :class "logo" :text "ARCH MENU" :hexpand false :vexpand false)
+			(button :class "btn-poweroff" :onclick "poweroff" :hexpand false :vexpand false (label :text "󰐥"))
+			(button :class "btn-reboot" :onclick "reboot" :hexpand false :vexpand false (label :text "󰑓"))
+			(button :class "btn-close" :onclick "eww close arch-menu" :hexpand false :vexpand false (label :text "󰅖")))
+		(box :class "modules" :orientation "v" :space-evenly false
+			(button :class "btn-wifi" :onclick "kitty --title nmtui -e nmtui &" :hexpand false :vexpand false (label :text "WI-FI"))
+			(button :class "btn-bluetooth" :onclick "kitty --title bluetoothctl -e bluetoothctl &" :hexpand false :vexpand false (label :text "BLUETOOTH")))
+		(box :class "sliders" :orientation "v" :space-evenly false
+			(scale :class "sld-volume":min 0 :max 101 :value volume
+			:onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%")
+			(scale :class "sld-brightness" :min 0 :max 256 :value brightness
+			:onchange "brightnessctl set {}"))
+		(box :class "empty" :space-evenly false
+			(label :class "empty-zone" :text "p"))))
+
+;==============================================================================;

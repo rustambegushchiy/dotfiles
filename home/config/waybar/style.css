@@ -1,0 +1,96 @@
+/* style.css файл waybar
+** от Begushchiy
+*/
+
+/*===== ОБЩИЕ НАСТРОЙКИ ======================================================*/
+
+* {
+	font-family: JetBrains Mono;
+	font-size: 18px;
+	border-radius: 0px;
+	border: none;
+}
+
+window#waybar {
+	background: black;
+	border: 5px solid #ff4b33;
+}
+
+/*===== ЛЕВАЯ ЧАСТЬ ПАНЕЛИ ===================================================*/
+
+#custom-arch {
+	color: white;
+	margin: 5px 0 5px 5px;
+	min-width: 30px;
+	margin: 0px;	
+	padding-right: 3px;
+	padding-left: 2px;
+}
+#custom-arch:hover {
+	color: black;
+	background: #ff4b33;
+}
+#workspaces {
+	margin: 5px 0 5px 0;
+}
+#workspaces button {
+	padding: 0;
+	min-width: 30px;
+}
+#workspaces button.active {
+	background: #ff4b33;
+	color: black;
+}
+#workspaces button:not(.active) {
+	background: black;
+	color: white;
+}
+#workspaces button:hover {
+	background: #ff4b33;
+	color: black;
+
+	box-shadow: inherit;
+	text-shadow: inherit;
+	transition: 0;	
+}
+
+/*===== ЦЕНТРАЛЬНАЯ ЧАСТЬ ПАНЕЛИ =============================================*/
+
+#clock {
+	background: black;
+	color: white;
+
+	margin: 5px 5px 5px 0;
+	padding: 0 5px 0 5px; 
+}
+#clock:hover {
+	background: #ff4b33;
+	color: black;
+}
+
+/*===== ПРАВАЯ ЧАСТЬ ПАНЕЛИ ==================================================*/
+
+#wireplumber {
+	background: black;
+	color: white;
+	
+	margin: 5px 5px 5px 0;
+	padding: 0 12px 0 5px; 
+}
+#wireplumber:hover {
+	background: #ff4b33;
+	color: black;
+}
+#battery {
+	background: black;
+	color: white;
+
+	margin: 5px 5px 5px 0;
+	padding: 0 12px 0 5px; 
+}
+#battery:hover {
+	background: #ff4b33;
+	color: black;
+}
+
+/*============================================================================*/

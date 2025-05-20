@@ -1,0 +1,51 @@
+/* style.css файл wofi
+** от Begushchiy
+**
+** Подробнее о стилизации можно узнать на сайте:
+** https://cloudninja.pw/docs/wofi.html
+*/
+
+
+/*===== СТИЛЬ ================================================================*/
+
+* {
+	font-family: JetBrains Mono;
+	font-size: 18px;
+}
+#inner-box {
+	background: black;
+}
+#outer-box {
+	background: black;
+	
+	border: 5px solid #ff4b33;
+}
+#entry {
+	background: black;
+}
+#entry:selected {
+	background: #ff4b33;
+	color: black;	
+
+	outline: none;
+	border: none;
+    	box-shadow: none;
+}
+#input {
+	background: black;
+	color: white;
+
+	margin: 5px;	
+
+	outline: none;
+	border: none;
+    	box-shadow: none;
+}
+#text {
+	color: white;
+}
+#text:selected {
+	color: black;
+}
+
+/*============================================================================*/

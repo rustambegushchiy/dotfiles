@@ -1,0 +1,47 @@
+{
+	"layer": "up",
+	"position": "up",
+	"height": 40,
+	
+	"modules-left": ["custom/arch", "hyprland/workspaces"],
+	"modules-center": ["clock"],
+	"modules-right": ["wireplumber", "battery"],
+
+	"custom/arch":
+	{
+		"format": "",
+		"on-click": "~/.config/eww/open-menu.sh",
+		"tooltip": false
+	},	
+	"hyprland/workspaces":
+	{
+		"format": "{name}",
+		"on-click": "activate",
+		"max-length": 40
+	},
+	"clock":
+	{
+		"format": "{:%H:%M | %d.%m %Y}",
+		"tooltip": false
+	},
+	"wireplumber":
+	{
+		"format": "{volume}% {icon}",
+		"format-muted": "X",
+		"format-icons": ["", "", ""]
+	},
+	"battery":
+	{
+		"bat": "BAT1",
+		"interval": 100,
+		"states":
+		{
+			"warning": 20,
+			"critical": 10
+		},
+		"format": "{capacity}% {icon}",
+		"format-icons": ["","","","",""],
+		"max-length": 25,
+		"tooltip": false
+	}
+}

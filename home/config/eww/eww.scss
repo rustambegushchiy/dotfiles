@@ -1,0 +1,201 @@
+/* scss file for eww
+** By Begushchiy
+**
+** For more information about config and style:
+** https://elkowar.github.io/eww/
+*/
+
+/*===== ARCH MENU ============================================================*/
+
+.arch-menu {
+	font-family: JetBrains Mono;
+	border: 5px solid #ff4b33; 
+	border-top: 0px;
+}
+.main .top-panel {
+	background: black;
+	color: white;
+}
+
+.main .top-panel .logo {
+	min-width: 255px;
+}
+
+.main .btn-poweroff {	
+	background: black;
+	color: white;
+
+	border: 0px;
+	border-left: 5px solid #ff4b33;
+	border-radius: 0px;
+
+	box-shadow: inherit;
+	text-shadow: inherit;
+	
+	min-width: 22px;
+	min-height: 32px;
+}
+.main .btn-reboot {
+	background: black;
+	color: white;
+
+	border: 0px;
+	border-left: 5px solid #ff4b33;
+	border-radius: 0px;
+
+	box-shadow: inherit;
+	text-shadow: inherit;
+	
+	min-width: 22px;
+	min-height: 32px;
+}
+.main .btn-close {
+	background: black;
+	color: white;
+	
+	border: 0px;
+	border-left: 5px solid #ff4b33;
+	border-radius: 0px;
+	
+	box-shadow: inherit;
+	text-shadow: inherit;
+
+	min-width: 22px;
+	min-height: 32px;
+}
+
+.main .btn-wifi {
+	background: black;
+	color: white;
+	
+	border: 0px;
+	border-top: 5px solid #ff4b33;	
+	border-radius: 0px;
+
+	box-shadow: inherit;
+	text-shadow: inherit;
+
+	min-height: 32px;
+}
+.main .btn-bluetooth {
+	background: black;
+	color: white;
+
+	border: 0px;
+	border-top: 5px solid #ff4b33;	
+	border-radius: 0px;
+
+	text-shadow: inherit;
+	box-shadow: inherit;
+
+	min-height: 32px;
+}
+
+.main .sld-volume {
+	background: black;
+	color: white;
+
+	border: 0px;
+	border-top: 5px solid #ff4b33;	
+	border-radius: 0px;
+
+	text-shadow: inherit;
+	box-shadow: inherit;
+
+	min-height: 16px;
+}
+.main .sld-volume trough {
+	background: white;
+	
+	border: 0px;
+	border-radius: 0px;
+	
+	text-shadow: inherit;
+	box-shadow: inherit;
+}
+.main .sld-volume trough highlight {
+	background: #ff4b33;
+	
+	border: 0px;
+	border-radius: 0px;
+	
+	text-shadow: inherit;
+	box-shadow: inherit;
+}
+.main .sld-volume trough slider {
+	background: white;
+	
+	text-shadow: inherit;
+	box-shadow: inherit;
+}
+.main .sld-volume trough slider:hover {
+	background: #ff4b33;
+}
+
+.main .sld-brightness {
+	background: black;
+	color: white;
+
+	border-radius: 0px;
+	border: 0px;
+
+	text-shadow: inherit;
+	box-shadow: inherit;
+
+	min-height: 16px;
+}
+.main .sld-brightness trough {
+	background: white;
+	
+	border: 0px;
+	border-radius: 0px;
+	
+	text-shadow: inherit;
+	box-shadow: inherit;
+}
+.main .sld-brightness trough highlight {
+	background: #ff4b33;
+	
+	border: 0px;
+	border-radius: 0px;
+	
+	text-shadow: inherit;
+	box-shadow: inherit;
+}
+.main .sld-brightness trough slider {
+	background: white;
+	
+	text-shadow: inherit;
+	box-shadow: inherit;
+}
+.main .sld-brightness trough slider:hover {
+	background: #ff4b33;
+}
+
+.main .btn-poweroff:hover {
+	background: #ff4b33;
+	color: black;
+}
+.main .btn-reboot:hover {
+	background: #ff4b33;
+	color: black;
+}
+.main .btn-close:hover {
+	background: #ff4b33;
+	color: black;
+}
+.main .btn-wifi:hover {
+	background: #ff4b33;
+	color: black;
+}
+.main .btn-bluetooth:hover {
+	background: #ff4b33;
+	color: black;
+}
+.main .empty-zone {
+	background: black;
+	color: black;
+	padding-top: 95px;
+	padding-right: 381px;
+}
+/*============================================================================*/
